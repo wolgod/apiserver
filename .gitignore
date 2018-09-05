@@ -1,0 +1,18 @@
+# maven ignore
+*.zip
+*.tar
+*.tar.gz
+*.exe
+
+# temp ignore
+*.log
+*.cache
+*.diff
+*.patch
+*.tmp
+# system ignore
+.DS_Store
+Thumbs.db
+#
+vendor/
+
