@@ -24,7 +24,10 @@ go get -u github.com/golang/dep/cmd/dep
 dep ensure
 ```
 ### ⚙️ 配置
-  修改config.yaml中数据库和redis地址
+  #### config.yaml
+   修改config.yaml中数据库和redis地址
+  #### db.sql
+   创建mysql数据库,初始化脚本
  
 ## 🚕 运行
 ### 运行前端项目
