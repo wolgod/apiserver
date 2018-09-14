@@ -1,0 +1,50 @@
+definitions:
+  user.CreateRequest:
+    properties:
+      address:
+        type: string
+      age:
+        type: integer
+      birthday:
+        type: string
+      password:
+        type: string
+      sex:
+        type: integer
+      username:
+        type: string
+    type: object
+  user.CreateResponse:
+    properties:
+      username:
+        type: string
+    type: object
+info:
+  contact: {}
+  license: {}
+paths:
+  /user:
+    post:
+      consumes:
+      - application/json
+      description: Add a new user
+      parameters:
+      - description: Create a new user
+        in: body
+        name: user
+        required: true
+        schema:
+          $ref: '#/definitions/user.CreateRequest'
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: '{"code":0,"message":"OK","data":{"username":"kong"}}'
+          schema:
+            $ref: '#/definitions/user.CreateResponse'
+            type: object
+      summary: Add new user to the database
+      tags:
+      - user
+swagger: "2.0"
