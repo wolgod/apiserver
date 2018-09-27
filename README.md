@@ -18,7 +18,7 @@ https://github.com/shaoheshan/vueadmin
 go get -u github.com/golang/dep/cmd/dep
 ```
 
-然后，在 **apiserver** 项目目录下运行以下命令来安装依赖
+然后，在 **apiserver** 项目目录下运行以下命令来安装依赖(需要翻墙,有些包国内无法直接下载)
 
 ```
 dep ensure
